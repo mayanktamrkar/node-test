@@ -1,7 +1,7 @@
 const http = require('http');
 
-const hostname = 'mayank-ap12.herokuapp.com ';
-const port = 3000;
+//const hostname = 'mayank-ap12.herokuapp.com ';
+const port = process.env.PORT || '3000'
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
